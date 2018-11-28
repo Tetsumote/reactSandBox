@@ -19,10 +19,10 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <Element2 />
-      <Container>
-        <Element1 />
+      <Element1 />
 
+      <Container>
+        <Element2 />
         <Element3 />
         <Element4 />
         <Element5 />
