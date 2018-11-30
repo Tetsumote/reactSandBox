@@ -10,7 +10,11 @@ import {
   CardTitle,
   CardText,
   Row,
-  Col
+  Col,
+  ListGroup,
+  ListGroupItem,
+  Jumbotron,
+  Container
 } from "reactstrap";
 import classnames from "classnames";
 
@@ -42,7 +46,7 @@ export default class Element7 extends React.Component {
                 this.toggle("1");
               }}
             >
-              Tab1
+              Adress:
             </NavLink>
           </NavItem>
           <NavItem>
@@ -52,7 +56,7 @@ export default class Element7 extends React.Component {
                 this.toggle("2");
               }}
             >
-              Moar Tabs
+              Google maps:
             </NavLink>
           </NavItem>
         </Nav>
@@ -60,33 +64,35 @@ export default class Element7 extends React.Component {
           <TabPane tabId="1">
             <Row>
               <Col sm="12">
-                <h4>Tab 1 Contents</h4>
+                <ListGroup flush>
+                  <ListGroupItem disabled tag="a" href="#">
+                    Cras justo odio
+                  </ListGroupItem>
+                  <ListGroupItem tag="a" href="#">
+                    Dapibus ac facilisis in
+                  </ListGroupItem>
+                  <ListGroupItem tag="a" href="#">
+                    Morbi leo risus
+                  </ListGroupItem>
+                  <ListGroupItem tag="a" href="#">
+                    Porta ac consectetur ac
+                  </ListGroupItem>
+                  <ListGroupItem tag="a" href="#">
+                    Vestibulum at eros
+                  </ListGroupItem>
+                </ListGroup>
               </Col>
             </Row>
           </TabPane>
           <TabPane tabId="2">
-            <Row>
-              <Col sm="6">
-                <Card body>
-                  <CardTitle>Special Title Treatment</CardTitle>
-                  <CardText>
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </CardText>
-                  <Button>Go somewhere</Button>
-                </Card>
-              </Col>
-              <Col sm="6">
-                <Card body>
-                  <CardTitle>Special Title Treatment</CardTitle>
-                  <CardText>
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </CardText>
-                  <Button>Go somewhere</Button>
-                </Card>
-              </Col>
-            </Row>
+            <div>
+              <Jumbotron fluid>
+                <Container fluid>
+                  <h1 className="display-3">Google maps</h1>
+                  <p className="lead">Content</p>
+                </Container>
+              </Jumbotron>
+            </div>
           </TabPane>
         </TabContent>
       </div>

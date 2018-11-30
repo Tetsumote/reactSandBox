@@ -3,7 +3,7 @@ import { Card, Button, CardTitle, CardText, Row, Col } from "reactstrap";
 
 const Element2 = props => {
   return (
-    <Row>
+    <Row className="element2">
       <Col sm="6">
         <Card body>
           <CardTitle>Special Title Treatment</CardTitle>

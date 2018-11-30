@@ -12,6 +12,7 @@ import Element4 from "./components/element4";
 import Element5 from "./components/element5";
 import Element6 from "./components/element6";
 import Element7 from "./components/element7";
+import Footer from "./components/footer";
 
 import { Container } from "reactstrap";
 
@@ -29,6 +30,7 @@ function App() {
         <Element6 />
         <Element7 />
       </Container>
+      <Footer />
     </div>
   );
 }

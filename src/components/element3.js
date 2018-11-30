@@ -10,7 +10,7 @@ import {
 export default class Example3 extends React.Component {
   render() {
     return (
-      <ListGroup>
+      <ListGroup className="mb-5">
         <ListGroupItem active>
           <ListGroupItemHeading>List group item heading</ListGroupItemHeading>
           <ListGroupItemText>

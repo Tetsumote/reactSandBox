@@ -8,20 +8,23 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from "reactstrap";
+import img1 from "../images/photo1.jpg";
+import img2 from "../images/photo2.jpg";
+import img3 from "../images/photo3.jpg";
 
 const items = [
   {
-    src: "https://source.unsplash.com/vZlTg_McCDo/1600x900",
+    src: img1,
     altText: "Slide 1",
     caption: "Slide 1"
   },
   {
-    src: "https://source.unsplash.com/fFzc4vomKDI/1600x900",
+    src: img2,
     altText: "Slide 2",
     caption: "Slide 2"
   },
   {
-    src: "https://source.unsplash.com/GFOAIc98ua8/1600x900",
+    src: img3,
     altText: "Slide 3",
     caption: "Slide 3"
   }
